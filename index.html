@@ -62,22 +62,6 @@
         span.innerHTML = LABELS[i];
       }
 
-
-
-    constraints = {
-      audio: false,
-      video: true
-    };
-
-    function handleSuccess(stream) {
-      video.srcObject = stream;
-    }
-
-    function handleError(error) {
-      alert('navigator.MediaDevices.getUserMedia error: ' + error.message + error.name);
-    }
-
-    navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
     </script>
   </body>
 </html>
